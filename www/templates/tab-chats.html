@@ -1,16 +1,27 @@
 <ion-view view-title="Chats">
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
+      <form ng-submit="button(product)">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Product</span>
+          <input type="text" ng-model ="product.name" placeholder="">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Product Price</span>
+          <input type="text" ng-model= "product.price" placeholder="">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Product Image</span>
+          </br>
+          <input type="image" style="height:340px; width:340px" src="http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg" ng-model="product.image" placeholder="">
+        </label>
+        <input type="submit" val="click me!">
+      </form>
+
+
+
+
     </ion-list>
   </ion-content>
 </ion-view>
