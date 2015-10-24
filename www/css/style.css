@@ -1,1 +1,7 @@
 /* Empty. Add your own CSS if you like */
+.socailBtn {
+  width:70% !important;
+  background-color: transparent !important;
+  border: 1px royalblue solid;
+  border-radius: 50%;
+}

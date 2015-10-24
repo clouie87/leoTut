@@ -5,9 +5,6 @@ angular.module('starter.services', [])
     var ref = new Firebase(FURL);
     var products = $firebaseArray(ref.child('products'));
 
-
-
-
   // Some fake testing data
   var Products = {
     all: products,
@@ -33,3 +30,5 @@ angular.module('starter.services', [])
 
 
 });
+
+
