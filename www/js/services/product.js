@@ -1,19 +1,17 @@
-angular.module('starter.services', [])
-
-.factory('Products', function(FURL, $firebaseArray, Auth) {
+app.factory('Products', function(FURL, $firebaseArray) {
   // Might use a resource here that returns a JSON array
-    var ref = new Firebase(FURL);
-    var products = $firebaseArray(ref.child('products'));
+  var ref = new Firebase(FURL);
+  var products = $firebaseArray(ref.child('products'));
 
   // Some fake testing data
   var Products = {
     all: products,
 
     saveProduct: function(product, image){
-      console.log('will save this to the database', product,Auth.user.profile.name);
+      console.log('will save this to the database', product);
+
       var newProduct = {
-        uImg: Auth.user.profile.gravatar,
-        seller: Auth.user.profile.name,
+        uImg: product.uImg,
         name :product.name,
         price: product.price,
         image: image
@@ -28,9 +26,7 @@ angular.module('starter.services', [])
     }
 
   };
-    return Products;
+  return Products;
 
 
 });
-
-

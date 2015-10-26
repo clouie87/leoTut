@@ -1,9 +1,40 @@
 <ion-view view-title="Account">
   <ion-content>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+
+      <div class="item">
+        <div class="row">
+          <div class="col">
+            <img src="{{profile}}" style="height:80px; width: 80px; border-radius: 50%">
+            <h2>{{userName}}</h2>
+          </div>
+
+          <div class="col col-75">
+            <div class="row">
+              <div class="col col-33" style="text-align: center">Buys</div>
+              <div class="col col-33" style="text-align: center">Following</div>
+              <div class="col col-33" style="text-align: center">Followers</div>
+              <!--<div class="col">Followers</div>-->
+          </div>
+
+
+          <!--</div>-->
+            <div class="row">
+              <div class="col-10"></div>
+              <div class="col"><button class="button button-full {{buttonStyle}}" ng-click="follow()">{{toggleText}}</button>
+                <!--<div class="box on" ng-show="toggle" ng-animate="'box'">On</div>-->
+              </div>
+              <!--<div class="col"></div>-->
+          </div>
+
+
+
+        <!--<p>Nine Inch Nails</p>-->
+      </div>
+      <!--<img class="" style="height: 50px" src="{{profile}}">-->
+    <!--<ion-toggle  ng-model="settings.enableFriends">-->
+        <!--Enable Friends-->
+    <!--</ion-toggle>-->
     </ion-list>
   </ion-content>
 </ion-view>

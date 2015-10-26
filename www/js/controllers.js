@@ -1,30 +1,15 @@
 angular.module('starter.controllers', [])
 
 .controller('LoginCtrl', function($scope, Auth, $state, $ionicPopup) {
-
+  console.log(Auth.user);
+    if (Auth.user){
+      console.log('user is already signed in');
+    }
     $scope.login = function () {
       console.log('in login function whats up');
       $state.go('tab.dash');
-
-      //Auth.$authWithOAuthRedirect("facebook").then(function(authData) {
-      //  console.log(authData);
-      //
-      //  // User successfully logged in
-      //}).catch(function(error) {
-      //  if (error.code === "TRANSPORT_UNAVAILABLE") {
-      //    console.log('we are redirecting');
-      //    Auth.$authWithOAuthPopup("facebook").then(function(authData) {
-      //      $state.go('tab.dash');
-      //      // User successfully logged in. We can log to the console
-      //      // since we’re using a popup here
-      //      console.log(authData);
-      //    });
-      //  } else {
-      //    // Another error occurred
-      //    console.log(error);
-      //  }
-      //});
     };
+
 
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
@@ -80,11 +65,9 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope, Products, Auth) {
   $scope.items = Products.all;
     console.log('the products are', $scope.items);
-    console.log('the user is ', Auth.user);
+    //console.log('the user is ', Auth.user.profile.email);
 
 
-      //var usersRef = new Firebase("https//<YOUR-FIREBASE-APP>.firebaseio.com/users");
-      //return $firebaseAuth(usersRef);
   })
 
 .controller('ChatsCtrl', function($scope, Products, Auth) {
@@ -92,6 +75,7 @@ angular.module('starter.controllers', [])
 
   $scope.button = function(product) {
     console.log('button was click', product);
+    console.log(Auth.user.profile.name, Auth.user.profile.email);
     //$scope.product.image = "http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg";
     Products.saveProduct(product, $scope.image);
     //send to database. create a service to send to database.
@@ -101,12 +85,33 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats,Auth) {
   //$scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, Auth) {
+    $scope.profile = Auth.user.profile.gravatar;
+    $scope.userName = Auth.user.profile.name;
+
+    $scope.toggleText = 'Follow';
+    $scope.buttonStyle="button-default";
+
+    $scope.toggle = true;
+
+    $scope.follow = function(){
+      if($scope.toggleText === 'Follow'){
+        $scope.toggleText = 'Following!';
+        $scope.buttonStyle="button-balanced";
+      }else{
+        $scope.toggleText = "Follow";
+        $scope.buttonStyle="button-default";
+      }
+       //= $scope.toggle ? 'Toggle!' : 'some text';
+      console.log($scope.toggleText);
+    }
+
   $scope.settings = {
     enableFriends: true
   };
+
 });
