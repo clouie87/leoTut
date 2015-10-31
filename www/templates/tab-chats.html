@@ -3,27 +3,40 @@
     <ion-list>
 
       <form ng-submit="button(product)">
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Product</span>
-          <input type="text" ng-model ="product.name" placeholder="">
-        </label>
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Product Tagline</span>
-          <input type="text" ng-model= "product.tagline" placeholder="">
-        </label>
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Product Description</span>
-          <input type="text" ng-model= "product.description" placeholder="">
-        </label>
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Product Price</span>
-          <input type="text" ng-model= "product.price" placeholder="">
-        </label>
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Product Image</span>
-          </br>
-          <input type="image" style="height:200px; width:200px; text-align: center; margin: 2% 20%" src="http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg" ng-model="product.image" placeholder="">
-        </label>
+        </br>
+        <div class="row">
+
+          <div class="col col-33">
+            <!--<label class="item item-input item-stacked-label">-->
+              <!--<span class="input-label">Product Image</span>-->
+              <!--</br>-->
+              <input type="image" style="width:100px; height:100px;" src="http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg" ng-model="product.image" placeholder="">
+            <!--</label>-->
+          </div>
+          <div class="col col-67 offset-10">
+            <label class="item item-input">
+              <input type="text" ng-model ="product.name" placeholder="Product Name">
+            </label>
+            <label class="item item-input">
+              <input type="text" ng-model= "product.tagline" placeholder="Product Tagline">
+            </label>
+          </div>
+        </div>
+          <label class="item item-input">
+            <!--<span class="input-label">Product Price</span>-->
+            <input type="text" ng-model= "product.price" placeholder="$ Price">
+          </label>
+        <!--<div class="row">-->
+          <label class="item item-input">
+            <!--<span class="input-label">Product Description</span>-->
+            <input type="text" ng-model= "product.description" placeholder="Product Description">
+          </label>
+
+        <!--</div>-->
+      <!--</div>-->
+
+
+
         <input type="submit" val="click me!">
       </form>
 

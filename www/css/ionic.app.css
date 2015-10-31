@@ -15,6 +15,12 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+.socailBtn {
+  width: 70% !important;
+  background-color: transparent !important;
+  border: 1px royalblue solid;
+  border-radius: 50%; }
+
 .item h2 {
   font-size: 18px !important; }
 

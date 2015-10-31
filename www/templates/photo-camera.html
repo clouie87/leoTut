@@ -1,0 +1,25 @@
+<ion-view view-title="Camera">
+  <ion-content>
+
+    <div class="list card">
+      <div class="item item-divider">Your Photo</div>
+      <div class="item item-body">
+        <div class="your-photo" style="width:280px;height:280px;border:1px solid #000;">
+          <!--{{data.imageURI}}-->
+          <img ng-src="data:image/jpeg;base64,{{data.imageURI}}" style="width:100%;" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-calm" ng-click="openModal()">Submit</button>
+      </div>
+      &nbsp;&nbsp;&nbsp;
+      <div class="col">
+        <button class="button button-block button-energized" ng-click="createForm()">Create</button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

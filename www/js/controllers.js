@@ -161,7 +161,7 @@ angular.module('starter.controllers', [])
     }
   })
 
-.controller('PhotoController', function($scope, $rootScope, $state, Auth, FURL, $ionicPopup, $cordovaCamera, toaster, Photo, PhotoChallenge, $ionicModal, Challenge, Accept) {
+.controller('PhotoController', function($scope, $rootScope, $state, $cordovaCamera) {
   console.log('got to the PhotoContoller linked');
 
   //$scope.photos = Photo.all;
@@ -209,7 +209,7 @@ angular.module('starter.controllers', [])
     };
 
 
-    $state.go('app.tab.photo-camera');
+    $state.go('tab.photo-camera');
 
     navigator.camera.getPicture(function (photo) {
       //alert('image is: ' + options.quality);
@@ -262,7 +262,7 @@ angular.module('starter.controllers', [])
 
   //alert("the number of challenges are", $scope.challenges.length);
 
-  $scope.challenges = $rootScope.acceptUser;
+  //$scope.challenges = $rootScope.acceptUser;
 
   //alert($rootScope.accept);
 })

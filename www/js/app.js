@@ -9,6 +9,7 @@ var app = angular.module('starter', [
   'ionic',
   'starter.controllers',
   'starter.services',
+  'ngCordova',
   'firebase'
 ])
 
@@ -71,11 +72,21 @@ var app = angular.module('starter', [
       }
     })
 
-    .state('app.tab.photo', {
+    .state('tab.photo', {
       url: '/photo',
       views: {
         'tab-chats': {
           templateUrl: 'templates/tab-photo.html',
+          controller: 'PhotoController'
+        }
+      }
+    })
+
+    .state('tab.photo-camera', {
+      url: '/photo/camera',
+      views: {
+        'tab-photo': {
+          templateUrl: 'templates/photo-camera.html',
           controller: 'PhotoController'
         }
       }
