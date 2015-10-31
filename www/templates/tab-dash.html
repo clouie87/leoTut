@@ -1,20 +1,18 @@
 <ion-view view-title="Dashboard">
-  <ion-nav-buttons side="left">
-    <button class="button" ng-show = "login()" ng-click="emailLogin()">
-      SignIn
-    </button>
-  </ion-nav-buttons>
+  <!--<ion-nav-buttons side="left">-->
+    <!--<button class="button" ng-show = "login()" ng-click="emailLogin()">-->
+      <!--SignIn-->
+    <!--</button>-->
+  <!--</ion-nav-buttons>-->
   <!--<button class="button button-clear button-positive">Edit</button>-->
   <ion-content class="padding">
 
 
-    <!--<ion-item>-->
-      <div class="list card" ng-repeat="item in items">
-
+    <ion-item class="list card" ng-repeat="item in items" type="item-text-wrap" href= "#/tab/dash/{{item.$id}}">
         <div class="item item-avatar">
           <img src="{{item.uImg}}">
           <h2>{{item.name}}</h2>
-          <!--<p>Nine Inch Nails</p>-->
+          <p class="tagline">{{item.tagline}}</p>
         </div>
 
         <div class="item item-image">
@@ -26,33 +24,6 @@
           ${{item.price}}
         </a>
 
-      </div>
-    <!--</ion-item>-->
-    <div class="list card">
-
-
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
-        </div>
-      </div>
-    </div>
+    </ion-item>
   </ion-content>
 </ion-view>

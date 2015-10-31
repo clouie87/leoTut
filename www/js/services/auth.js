@@ -39,6 +39,14 @@ app.factory('Auth', function(FURL, $firebaseAuth, $firebaseArray, $firebaseObjec
       });
 
     },
+
+    //isLoggedIn: function(authData){
+    //  if(authData){
+    //    console.log('its true')
+    //  }else{
+    //    console.log('its false')
+    //  }
+    //},
     logout: function () {
       auth.$unauth();
     }
@@ -52,8 +60,8 @@ app.factory('Auth', function(FURL, $firebaseAuth, $firebaseArray, $firebaseObjec
 
       Auth.user.profile = $firebaseObject(ref.child('profile').child(authData.uid));
       //set our Auth.user.profile so we have access to this data in our controllers
-      console.log('the user is already signed in');
-      //$state.go('tab.dash');
+      console.log('the user is already signed in', Auth.user.profile);
+      $state.go('tab.dash');
 
 
     }

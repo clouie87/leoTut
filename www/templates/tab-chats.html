@@ -8,13 +8,21 @@
           <input type="text" ng-model ="product.name" placeholder="">
         </label>
         <label class="item item-input item-stacked-label">
+          <span class="input-label">Product Tagline</span>
+          <input type="text" ng-model= "product.tagline" placeholder="">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Product Description</span>
+          <input type="text" ng-model= "product.description" placeholder="">
+        </label>
+        <label class="item item-input item-stacked-label">
           <span class="input-label">Product Price</span>
           <input type="text" ng-model= "product.price" placeholder="">
         </label>
         <label class="item item-input item-stacked-label">
           <span class="input-label">Product Image</span>
           </br>
-          <input type="image" style="height:340px; width:340px" src="http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg" ng-model="product.image" placeholder="">
+          <input type="image" style="height:200px; width:200px; text-align: center; margin: 2% 20%" src="http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg" ng-model="product.image" placeholder="">
         </label>
         <input type="submit" val="click me!">
       </form>

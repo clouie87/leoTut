@@ -1,0 +1,73 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title={{item.name}}>
+  <ion-content class="padding">
+
+
+
+    <div class="item">
+      <div class="row">
+        <div class="col col-33">
+          <img style="height: 100px; width: 100px" src="{{item.image}}">
+        </div>
+        <div class="col col-67 col-offset-10">
+          <h2>{{item.name}}</h2>
+          <p class="tagline">{{item.tagline}}</p>
+          <br/>
+          <p>Stars</p>
+          <p>24 purchased</p>
+        </div>
+      </div>
+      <p>{{item.description}}</p>
+    </div>
+
+    <!--<div>-->
+      <div class="button-bar" ng-show="true">
+        <a class="button button-small" ng-class="{ 'active': activeButton === 'showReviewView' }" ng-click="showReview();activeButton = 'showReviewView'">Review</a>
+        <a class="button button-small" ng-class="{ 'active': activeButton === 'showSimilarView' }" ng-click="showSimilar();activeButton = 'showSimilarView'">Similar Items</a> <!-- button-energized" ng-click="showSimilar()" -->
+        <a class="button button-small" ng-class="{ 'active': activeButton === 'showProfileView' }" ng-click="showSellerProfile();activeButton = 'showProfileView'">{{item.seller}}'s Profile</a>
+      </div>
+
+      <div class="showReviewView_content" ng-show="showReviewView">
+        <div  id="reviews" class="col col-90 offset-10">
+          <p>this will be users reviews</p>
+        </div>
+      </div>
+
+      <div class="showSimilarView_content" ng-show="showSimilarView">
+        <div id="similarItems">
+          <p>this will be pictures that are similar</p>
+        </div>
+      </div>
+
+      <div class="showSimilarView_content" ng-show="showProfileView">
+        <div id="sellerProfile">
+          <p>here we'll show seller profile</p>
+        </div>
+      </div>
+
+
+  <!--</div>-->
+    <!--</ion-content>-->
+
+
+
+
+
+
+
+
+    <!--</div>-->
+
+
+    <!--<p>We are in the item description page</p>-->
+    <!--<img ng-src="{{chat.face}}" style="width: 64px; height: 64px">-->
+    <!--<p>-->
+      <!--{{chat.lastText}}-->
+    <!--</p>-->
+  </ion-content>
+</ion-view>
