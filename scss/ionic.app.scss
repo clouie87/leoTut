@@ -41,10 +41,22 @@ p.tagline {
   white-space: normal !important;
 }
 
+.item.upload{
+  border: none !important;
+}
+
+.item.upload-top{
+  border-bottom: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-top: darkgrey solid 1px !important;
+}
+
 .button.active{
   background-color: #daa520 !important;
   color: ghostwhite !important;
 }
+
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";

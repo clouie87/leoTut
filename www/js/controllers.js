@@ -159,9 +159,17 @@ angular.module('starter.controllers', [])
       $scope.showSimilarView = false;
       $scope.showProfileView = true;
     }
+
+    //$window.Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh'));
+
+    $scope.payment = function(){
+      console.log('open payment');
+      $scope.showPaymentView = true;
+
+    }
   })
 
-.controller('PhotoController', function($scope, $rootScope, $state, $cordovaCamera) {
+.controller('PhotoController', function($scope, $rootScope, $state, Products, Auth, $cordovaCamera) {
   console.log('got to the PhotoContoller linked');
 
   //$scope.photos = Photo.all;
@@ -178,7 +186,7 @@ angular.module('starter.controllers', [])
   //console.log('the accepted are ', $scope.accepteds);
 
   $rootScope.data = {};
-  $rootScope.data.imageURI = "http://41.media.tumblr.com/tumblr_mby7btxbMs1r8gydho1_500.jpg";
+  $rootScope.data.imageURI = "https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/23326_587691014579651_886097383_n.jpg?oh=55ed92e2cf7f744414fa254540ede4d3&oe=56AE6B4D";
   //need to use rootScope here because im passing it between pages(?)
   $rootScope.accept = [];
 
@@ -205,11 +213,11 @@ angular.module('starter.controllers', [])
       popoverOptions: CameraPopoverOptions,
       targetWidth: 500,
       targetHeight: 500,
-      saveToPhotoAlbum: false
+      saveToPhotoAlbum: true
     };
 
 
-    $state.go('tab.photo-camera');
+    $state.go('tab.photo');
 
     navigator.camera.getPicture(function (photo) {
       //alert('image is: ' + options.quality);
@@ -217,6 +225,8 @@ angular.module('starter.controllers', [])
 
 
       var image = "data:image/jpeg;base64," + photo;
+      //alert(image);
+      $scope.image = image;
 
       //alert('image is: ' + image);
 
@@ -228,47 +238,25 @@ angular.module('starter.controllers', [])
 
   };
 
-  /////////////////////////////////////submit Form Action////////////////////////////////
-  //$scope.submitForm = function(){
-  //  $scope.photo = {};
-  //  console.log('submit button was clicked');
-  //  var mySubmit = $ionicPopup.show({
-  //    templateUrl: 'templates/partials/submit.html',
-  //    title: 'Submit Photo',
-  //    //cssClass: 'photoUploadPopup',
-  //    scope: $scope,
-  //    buttons:[{
-  //      text: 'x',
-  //      type:'button button-icon icon ios-close-round'
-  //    },
-  //      {
-  //        text: 'Submit',
-  //        type:'button-calm',
-  //        onTap: function(photo) {
-  //          photo = $scope.photo;
-  //          $scope.photo.imageURI = $rootScope.data.imageURI;
-  //          console.log('photo object: ', photo.name, photo.description, photo.imageURI);
-  //          Photo.submitPhoto(photo).then(function(){
-  //            toaster.pop('Success', "photo is saved");
-  //          });
-  //
-  //        }
-  //      }]
-  //  });
-  //};
+    $scope.button = function(product) {
+      //alert($rootScope.data.image, $scope.image);
+      //alert(product.image);
+      alert($scope.image);
+      console.log(product);
+      console.log(Auth.user.profile.name, Auth.user.profile.email);
+      //$scope.product.image = "http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg";
+      Products.saveProduct(product, $scope.image);
+      //send to database. create a service to send to database.
+    }
 
-  ///////////////////////////////////Submit Form //////////////////////////////////
+    $scope.library = function() {
+      console.log('open photo library');
+    }
 
-
-  //alert("the number of challenges are", $scope.challenges.length);
-
-  //$scope.challenges = $rootScope.acceptUser;
-
-  //alert($rootScope.accept);
-})
+    })
 
   .controller('ChatsCtrl', function($scope, Products, Auth) {
-  $scope.image = "http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg";
+  $scope.image = "https://scontent.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/582294_729460050402746_1738454447_n.png?oh=f230bfb638aa92a118d777def081ab42&oe=56B7BC66";
 
   $scope.button = function(product) {
     console.log('button was click', product);

@@ -1,12 +1,59 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Camera">
   <ion-content>
+
+    <!--<div class="list card">-->
+    <!--<div class="item item-divider">Your Photo</div>-->
+    <!--<div class="item item-body">-->
+    <!--<div class="your-photo" style="width:280px;height:280px;border:1px solid #000;">-->
+    <!--&lt;!&ndash;{{data.imageURI}}&ndash;&gt;-->
+    <!--<img ng-src="data:image/jpeg;base64,{{data.imageURI}}" style="width:100%;" />-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
     <ion-list>
+      <form ng-submit="button(product)">
+        </br>
+        <div class="row">
 
-      test
+          <div class="col col-33">
+            <!--<label class="item item-input item-stacked-label">-->
+            <!--<span class="input-label">Product Image</span>-->
+            <!--</br>-->
+            <img ng-src="data:image/jpeg;base64,{{data.imageURI}}" style="width:100px;height:100px;"/>
+            <input type="hidden" ng-model="product.image" value="data:image/jpeg;base64,{{data.imageURI}}" >
+            <!--</label>-->
+          </div>
+          <div class="col col-67 offset-10">
+            <label class="item item-input upload">
+              <input type="text" ng-model ="product.name" placeholder="Product Name" autofocus>
+            </label>
+            <label class="item item-input upload-top">
+              <input type="text" ng-model= "product.tagline" placeholder="Product Tagline">
+            </label>
+          </div>
+        </div>
+        <label class="item item-input upload-top">
+          <!--<span class="input-label">Product Price</span>-->
+          <input type="text" ng-model= "product.price" placeholder="$ Price">
+        </label>
+        <!--<div class="row">-->
+        <label class="item item-input upload">
+          <!--<span class="input-label">Product Description</span>-->
+          <input type="text" ng-model= "product.description" placeholder="Product Description">
+        </label>
+        <input type="hidden" ng-model="product.image" value="data:image/jpeg;base64,{{data.imageURI}}" >
+        </br>
 
+        <!--</div>-->
+        <!--</div>-->
 
+        <button type="submit" class="button button-block button-balanced"> Submit </button>
 
+        <!--<input type="submit" val="click me!">-->
+      </form>
 
     </ion-list>
+
   </ion-content>
 </ion-view>

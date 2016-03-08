@@ -61,7 +61,7 @@ app.factory('Auth', function(FURL, $firebaseAuth, $firebaseArray, $firebaseObjec
       Auth.user.profile = $firebaseObject(ref.child('profile').child(authData.uid));
       //set our Auth.user.profile so we have access to this data in our controllers
       console.log('the user is already signed in', Auth.user.profile);
-      //$state.go('tab.dash');
+      $state.go('tab.dash');
 
 
     }

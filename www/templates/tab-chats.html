@@ -10,34 +10,35 @@
             <!--<label class="item item-input item-stacked-label">-->
               <!--<span class="input-label">Product Image</span>-->
               <!--</br>-->
-              <input type="image" style="width:100px; height:100px;" src="http://ak-hdl.buzzfed.com/static/2015-03/19/11/enhanced/webdr05/grid-cell-15754-1426777975-0.jpg" ng-model="product.image" placeholder="">
+              <input type="image" style="width:100px; height:100px;" src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/23326_587691014579651_886097383_n.jpg?oh=55ed92e2cf7f744414fa254540ede4d3&oe=56AE6B4D" ng-model="product.image" placeholder="">
             <!--</label>-->
           </div>
           <div class="col col-67 offset-10">
-            <label class="item item-input">
-              <input type="text" ng-model ="product.name" placeholder="Product Name">
+            <label class="item item-input upload">
+              <input type="text" ng-model ="product.name" placeholder="Product Name" autofocus>
             </label>
-            <label class="item item-input">
+            <label class="item item-input upload-top">
               <input type="text" ng-model= "product.tagline" placeholder="Product Tagline">
             </label>
           </div>
         </div>
-          <label class="item item-input">
+          <label class="item item-input upload-top">
             <!--<span class="input-label">Product Price</span>-->
             <input type="text" ng-model= "product.price" placeholder="$ Price">
           </label>
         <!--<div class="row">-->
-          <label class="item item-input">
+          <label class="item item-input upload">
             <!--<span class="input-label">Product Description</span>-->
             <input type="text" ng-model= "product.description" placeholder="Product Description">
           </label>
+        </br>
 
         <!--</div>-->
       <!--</div>-->
 
+        <button type="submit" class="button button-block button-balanced"> Submit </button>
 
-
-        <input type="submit" val="click me!">
+        <!--<input type="submit" val="click me!">-->
       </form>
 
 
