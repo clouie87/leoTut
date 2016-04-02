@@ -33,7 +33,6 @@ var app = angular.module('starter', [
 .constant('FURL', 'https://antice.firebaseio.com/')
 
 .config(function($stateProvider, $urlRouterProvider) {
-
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
