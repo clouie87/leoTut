@@ -10,6 +10,8 @@ angular.module('starter.controllers', [])
       $state.go('tab.dash');
     };
 
+    // adding some notes to make a new pr.
+
 
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
