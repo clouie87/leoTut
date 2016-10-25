@@ -11,6 +11,7 @@ angular.module('starter.controllers', [])
     };
 
     // adding some notes to make a new pr.
+    // adding some more notes!
 
 
     $scope.emailLogin = function () {
