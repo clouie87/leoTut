@@ -13,6 +13,7 @@ angular.module('starter.controllers', [])
     // adding some notes to make a new pr.
 
 
+    // making extra notes so i can add checkbox to my master pr!
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
 
