@@ -12,7 +12,7 @@ angular.module('starter.controllers', [])
 
     // adding some notes to make a new pr.
     // adding some more notes!
-
+    // checking to see if determining merge will show me this merge when i look into the branch
 
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
