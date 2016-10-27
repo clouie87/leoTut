@@ -14,6 +14,8 @@ angular.module('starter.controllers', [])
     // adding some more notes!
     // checking to see if determining merge will show me this merge when i look into the branch
 
+    // closing issues #17, #18
+
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
 
