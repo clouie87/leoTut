@@ -16,6 +16,7 @@ angular.module('starter.controllers', [])
     // making extra notes so i can add checkbox to my master pr!
     // what else can i put in here
     // closing issue #8
+    // closing more issues
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
 
