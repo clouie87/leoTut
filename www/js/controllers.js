@@ -11,7 +11,10 @@ angular.module('starter.controllers', [])
     };
 
     // adding some notes to make a new pr.
+    // adding some more notes!
+    // checking to see if determining merge will show me this merge when i look into the branch
 
+    // closing issues #17, #18
 
     // making extra notes so i can add checkbox to my master pr!
     // what else can i put in here
