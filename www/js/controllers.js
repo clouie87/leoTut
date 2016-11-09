@@ -17,6 +17,7 @@ angular.module('starter.controllers', [])
     // what else can i put in here
     // closing issue #8
     // closing more issues
+    //  adding new test
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
 
