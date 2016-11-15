@@ -22,6 +22,9 @@ angular.module('starter.controllers', [])
 
     // alksdjfaslkdj
     // asdkfajsd
+
+    // blah blah
+    // blah blah
     $scope.emailLogin = function () {
       console.log('will show a popup for the email login');
 
