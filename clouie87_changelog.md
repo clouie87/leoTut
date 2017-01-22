@@ -1,10 +1,4 @@
-## Deployed to: clouie87 (Sun Jan 22 21:01:39 2017)
-
-No Closed PRS
-
-{"clouie87":{"old_sha":"0179986b88b141f22693f1ec92f9f067a644a0ee","commit_sha":"0179986b88b141f22693f1ec92f9f067a644a0ee"}}
-
-## Deployed to: clouie87 (Fri Jan 20 23:24:19 2017)
+## Deployed to: clouie87 (Sun Jan 22 21:05:11 2017)
 
 #### Closed PRS:
 
@@ -29,7 +23,7 @@ No Closed PRS
 ###### Closes:
  #26 
 
-{"clouie87":{"old_sha":"77f0d9723c28eecf7ae9a2efda92fe39ec96e5f0","commit_sha":"0179986b88b141f22693f1ec92f9f067a644a0ee"}}
+{"clouie87":{"old_sha":"77f0d9723c28eecf7ae9a2efda92fe39ec96e5f0","commit_sha":"bc76e39323b0d2f976e4d8bf89e1e9ca92dbf857"}}
 
 ## Deployed to: clouie87 (Fri Jan 20 23:23:27 2017)
 
