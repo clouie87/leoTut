@@ -1,4 +1,4 @@
-## Deployed to: beta_2.0 (Fri Jan 27 19:30:46 2017)
+## Deployed to: beta_2.0 (Fri Jan 27 23:24:14 2017)
 
 #### Closed PRS:
 
@@ -37,16 +37,6 @@
 ###### Closes:
  #24 
 
-{"beta_2.0":{"old_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef","commit_sha":"5ce9ec05e7ad4f91a0c83f6ae14069e3746b8353"}}
+{"beta_2.0":{"old_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef","commit_sha":"2188d7c99a2246ab8b00b031a17e0407b76211bf"}}
 
-## Deployed to: beta_2.0 (Fri Jan 27 19:23:43 2017)
 
-No Closed PRS
-
-{"beta_2.0":{"old_sha":"1e7a2bef28f5eec5251f96081c7fb36cb7ceb6ab","commit_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef"}}
-
-## Deployed to: beta_2.0 (Fri Jan 27 19:21:47 2017)
-
-First Deploy
-
-{"beta_2.0":{"old_sha":null,"commit_sha":"1e7a2bef28f5eec5251f96081c7fb36cb7ceb6ab"}}
