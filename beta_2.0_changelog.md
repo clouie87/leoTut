@@ -128,6 +128,6 @@
 ###### Closes:
  #24 
 
-<--{"beta_2.0":{"old_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef","commit_sha":"2188d7c99a2246ab8b00b031a17e0407b76211bf"}}-->
+<-- {"beta_2.0":{"old_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef","commit_sha":"2188d7c99a2246ab8b00b031a17e0407b76211bf"}} -->
 
 
