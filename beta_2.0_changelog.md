@@ -5,7 +5,8 @@
 ###### #29 - adds scrolls
 
 ###### Changes
- 
+
+ 
 - Adds scrolling 
 
 
@@ -15,7 +16,8 @@
 ###### #28 - more commits
 
 ###### Changes
- 
+
+ 
 - adds map 
 - includes lat/lng 
 
@@ -26,7 +28,8 @@
 ###### #25 - Release Notes
 
 ###### Changes
- 
+
+ 
 - we’re going to tell the tagManager the server_name and tag that was just created (new_tag) 
 - given the server_name and new_tag the tagManager will find the merged pull requests between the last tag with the server_name and new_tag 
 - it will parse and create the change log from merged pull requests text 
@@ -46,7 +49,8 @@
 ###### #29 - adds scrolls
 
 ###### Changes
- 
+
+ 
 - Adds scrolling 
 
 
@@ -56,7 +60,8 @@
 ###### #28 - more commits
 
 ###### Changes
- 
+
+ 
 - adds map 
 - includes lat/lng 
 
@@ -67,7 +72,8 @@
 ###### #25 - Release Notes
 
 ###### Changes
- 
+
+ 
 - we’re going to tell the tagManager the server_name and tag that was just created (new_tag) 
 - given the server_name and new_tag the tagManager will find the merged pull requests between the last tag with the server_name and new_tag 
 - it will parse and create the change log from merged pull requests text 
@@ -87,7 +93,8 @@
 ###### #29 - adds scrolls
 
 ###### Changes
- 
+
+ 
 - Adds scrolling 
 
 
@@ -97,7 +104,8 @@
 ###### #28 - more commits
 
 ###### Changes
- 
+
+ 
 - adds map 
 - includes lat/lng 
 
@@ -108,7 +116,8 @@
 ###### #25 - Release Notes
 
 ###### Changes
- 
+
+ 
 - we’re going to tell the tagManager the server_name and tag that was just created (new_tag) 
 - given the server_name and new_tag the tagManager will find the merged pull requests between the last tag with the server_name and new_tag 
 - it will parse and create the change log from merged pull requests text 
@@ -119,6 +128,6 @@
 ###### Closes:
  #24 
 
-{"beta_2.0":{"old_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef","commit_sha":"2188d7c99a2246ab8b00b031a17e0407b76211bf"}}
+<--{"beta_2.0":{"old_sha":"c649b7aa90da3c89b46a264439ee9a7ebfc716ef","commit_sha":"2188d7c99a2246ab8b00b031a17e0407b76211bf"}}-->
 
 
