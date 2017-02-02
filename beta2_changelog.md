@@ -1,3 +1,19 @@
+## Deployed to: beta2 (Thu Feb  2 19:00:31 2017)
+
+#### Closed PRS:
+
+###### #29 - adds scrolls
+
+###### Changes
+ 
+- Adds scrolling 
+
+
+###### Closes:
+ #27 
+
+[meta_data]: {"beta2":{"old_sha":"c4dd481ac66b232ebda158bd3ff38655ba78e0da","commit_sha":"eb797c091bd259045cf97c36b6c89cbb1f73dad2"}}
+
 ## Deployed to: beta2 (Thu Feb  2 18:44:58 2017)
 
 #### Closed PRS:
