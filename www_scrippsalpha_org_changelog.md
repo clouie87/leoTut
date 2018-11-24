@@ -5,7 +5,8 @@
 ###### #9587 - 1485 improve form numbering
 
 ###### Changes
- 
+
+ 
 
 - Unique duplicate form fields 
 
@@ -18,7 +19,8 @@
 ###### #9608 - Fix Expandable Components margins
 
 ###### Changes
- 
+
+ 
 
 - updates the expandable component margins to use the ACO solution. 
 
@@ -31,7 +33,8 @@
 ###### #9617 - Change preset templates
 
 ###### Changes
- 
+
+ 
 
 - Changes FB and Newsletter presets 
 
@@ -42,7 +45,8 @@
 ###### #9615 - Fix Sources targeting non-vanity paths
 
 ###### Changes
- 
+
+ 
 
 - Fix campaign shortcut urls not redirecting to the vanity path 
 
@@ -53,11 +57,12 @@
 ###### #9611 - Allow concurrent_slots to remain unset
 
 ###### Changes
- Marc wants the ability to not set a limit on the number of concurrent appointments. 
+
+ Marc wants the ability to not set a limit on the number of concurrent appointments. 
 
 
 ###### Closes:
  Related to https://github.com/combinaut/sparkle-compassus/issues/482 
 
-<!-- [meta_data]: {"www.scrippsalpha.org":{"old_sha":"0895f3f829863ac50c1ba2ad8106d2b31fec4235","commit_sha":"ccdbe46834a14e723df14b55fb54b1b32209e45f"}} -->
+[meta_data]: {"www.scrippsalpha.org":{"old_sha":"0895f3f829863ac50c1ba2ad8106d2b31fec4235","commit_sha":"ccdbe46834a14e723df14b55fb54b1b32209e45f"}}
 
